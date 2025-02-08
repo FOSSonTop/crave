@@ -25,7 +25,7 @@ features:
     link: ./tricks
   - title: Crave AOSP Builder(Github Actions)
     description: sounddrill's workflow to automate builds using Crave.io
-    link: ./tricks
+    link: https://github.com/sounddrill31/crave_aosp_builder
   #- title: Add More
   #  description: Suggestions for More Entries
 ---
