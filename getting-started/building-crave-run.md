@@ -7,7 +7,7 @@ order: 4
 ## Building Using Crave Run command
 ### How to build using Crave Run Command
 
->! [NOTE]
+> [!NOTE]
 > This section shows you how commands work. Skip to The next half for [how to also clone device sources in there](#Clone-Device-Sources-During-Build)
 
 Simply use crave run! On a normal server, we'd be running commands one
@@ -90,5 +90,5 @@ m bacon"
 ```
 
 
->! [NOTE]
+> [!NOTE]
 > This section assumes you're trying to build only Crave-supported ROMs. Skip to The next section if you want to build unsupported ROMs.

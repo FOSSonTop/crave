@@ -31,9 +31,9 @@ clone destroy to delete the folder. Do not use rm -rf!
 crave clone destroy /crave-devspaces/Lineage21
 ```
 
->! [NOTE]
+> [!NOTE]
 > It is highly recommended that you take a second and set up crave.yaml and come back here. You can find the link to the guide here: [[link]](./more-info.md#craveyaml)
 
 
->! [WARNING]
+> [!WARNING]
 > Do not use repo sync or repo init here or try to build in here. You are still in the `Devspace CLI` environment where these actions are prohibited and will likely get you banned. Go to the next section to follow how to do it the right way.
