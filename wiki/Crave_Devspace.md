@@ -503,7 +503,7 @@ shown
 
 This is a file to pass specific instructions to crave. Because repo init
 put files in .repo/manifests, that's where our crave.yaml should go.
-Move it to <Workspace Dir>/.repo/manifests/crave.yaml.
+Move it to [Workspace Dir]/.repo/manifests/crave.yaml.
 
 crave.yaml can be used to pass environment variables, push certain
 files, use a certain docker image, etc.
