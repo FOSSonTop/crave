@@ -37,7 +37,7 @@ This script automates the process of generating, encrypting, and uploading Andro
 
 1. **Execute the Script:**
 
-   Enter your Project folder. If you don't have one already, make one using [crave clone create](Crave_Devspace.md#setting-up-the-project).
+   Enter your Project folder. If you don't have one already, make one using [crave clone create](./setting-project.md).
 
    `cd Lineage21`
 
@@ -202,7 +202,7 @@ Replace "LOS 21" with your base project's name. Remember to use the correct name
 
 Also remember to replace the placeholder credentials with actual values.
 
-It is also recommended to set ignoreClientHostname to preserve workflow persistence. Read more about it [here](Crave_Devspace#workspace-persistence).
+It is also recommended to set ignoreClientHostname to preserve workflow persistence. Read more about it [here](./more-info.md#workspace-persistence).
 
 If you're using sounddrill's crave_aosp_builder github actions workflow, you can set crave.yaml through secrets. Steps:
 

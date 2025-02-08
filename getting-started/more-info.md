@@ -107,13 +107,13 @@ built with
 
 Tip: You use --clean flag in crave run to reset the build storage as
 shown
-[here](./Crave_Devspace#how-to-build-using-crave-run-command)
+[here](./building-crave-run.md#how-to-build-using-crave-run-command)
 
 ### Crave.yaml
 
 This is a file to pass specific instructions to crave. Because repo init
 put files in .repo/manifests, that's where our crave.yaml should go.
-Move it to <Workspace Dir>/.repo/manifests/crave.yaml.
+Move it to [Workspace Dir]/.repo/manifests/crave.yaml.
 
 crave.yaml can be used to pass environment variables, push certain
 files, use a certain docker image, etc.

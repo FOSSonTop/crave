@@ -6,4 +6,4 @@ order: 0
 
 Please read the rules before getting started.
 
-[Here's the link to the rules](Crave_Rules)
+[Here's the link to the rules](../rules.md)

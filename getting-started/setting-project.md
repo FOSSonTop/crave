@@ -32,7 +32,7 @@ crave clone destroy /crave-devspaces/Lineage21
 ```
 
 >! [NOTE]
-> It is highly recommended that you take a second and set up crave.yaml and come back here. You can find the link to the guide here: [[link]](./more-info/index.md#craveyaml)
+> It is highly recommended that you take a second and set up crave.yaml and come back here. You can find the link to the guide here: [[link]](./more-info.md#craveyaml)
 
 
 >! [WARNING]

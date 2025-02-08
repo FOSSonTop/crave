@@ -43,7 +43,7 @@ This guide attempts to help new and old users with Android development and using
 To use crave, you'll likely be doing this:
 - Enter Devspace CLI ([Guide](./getting-started/installing-crave.md))
 - Crave Cloning a new project and entering that folder([Guide](./getting-started/setting-project.md))
-- Set up workspace Persistance ([Guide](./getting-started/more-info/index.md#craveyaml))
+- Set up workspace Persistance ([Guide](./getting-started/more-info.md#craveyaml))
 - Using Crave Run to start build ([Guide](./getting-started/building-crave-run.md))
 - Pulling your Output ([Guide](./getting-started/pulling-output.md))
 - Destroying old crave clone(optional) ([Guide](./getting-started/setting-project.md))

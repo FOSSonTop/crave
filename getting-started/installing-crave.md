@@ -10,13 +10,13 @@ Open [sessions](https://foss.crave.io/app/#/session?team=14) tab and
 click on "Create Session/Connect" button.
 
 Now, [skip to the next
-section](./Crave_Devspace#setting-up-the-project) without worrying about entering Devspace CLI.
+section](./setting-project.md) without worrying about entering Devspace CLI.
 
 For menu, swipe from the middle of the left side of your phone. If you're on a computer/have access to a keyboard, press `Ctrl+Alt+Shift`. This menu allows you to customize the terminal, and switch input method, like phone keyboard instead of emulated one. 
 
 Crave RAS is built upon [Apache Guacamole](https://guacamole.apache.org/)
 
-There's also a VSCode Web Client, instructions to set this up can be found [here](./Crave_Tricks#wiki/Crave_Tricks#vs-code-web)
+There's also a VSCode Web Client, instructions to set this up can be found [here](../tricks.md#vs-code-web)
 
 ### *Windows*
 
@@ -124,7 +124,7 @@ click on Create API Key Button.
 - Create a new file in your current shell called crave.conf
     - Paste the API Key here
 #### Step 3: Connect
-Once you take your valid crave.conf, just connect using `crave -n devspace` and return to the [previous guide](./Crave_Devspace.md##setting-up-the-project)
+Once you take your valid crave.conf, just connect using `crave -n devspace` and return to the [previous guide](./setting-project.md)
 
 > [!NOTE]  
 > -n here tells crave to not look for updates. As of crave 7064, Updating step causes segmentation fault error, which can be worked around this way.
