@@ -13,12 +13,23 @@ hero:
       text: Go Back
       link: ../index
 
-#features:
-#  - icon: We'll fill these later as we're doing the migration
-#    title: 
-#    link: mainly crave guide, crave rules, crave debugging tips, crave tricks
+features:
+  - title: Crave Devspace CLI
+    description: A guide to using Crave Devspace CLI to build android
+    link: ./getting-started/1.-Reading-Rules
+  - title: Crave Rules
+    description: Rules for Using Crave.io's FOSS Services
+    link: ./rules
+  - title: Crave Tricks
+    description: Some tips and tricks we discovered when we first discovered crave
+    link: ./tricks
+  - title: Crave AOSP Builder(Github Actions)
+    description: sounddrill's workflow to automate builds using Crave.io
+    link: ./tricks
+  #- title: Add More
+  #  description: Suggestions for More Entries
 ---
-
+<!--mainly crave guide, crave rules, crave debugging tips, crave tricks-->
 # Context
 
 Earlier, Cirrus CI gave the ROM Builders community servers for OSS developement of Android builds, as these builds need a lot of resources that most people don't have lying around, like double digit RAM requirements (GB), triple digit storage requirements (GB), a capable processor, a specific Linux environment, etc.
@@ -27,22 +38,12 @@ Cirrus CI has discontinued ROM Builders around Nov 2023. Now, [crave.io](https:/
 
 This guide attempts to help new and old users with Android development and using crave.io through Devspace CLI and alternatively, Github Actions.
 
-## Crave Resources
-
-Here are some useful guides, links and write-ups for using Crave.io resources for building android ROMs:
-
-- [Crave Devspaces CLI](./wiki/Crave_Devspace)
-- [Crave Devspaces CLI - Rules](./wiki/Crave_Rules)
-- [Crave Devspaces CLI - Additional Tips and Tricks](./wiki/Crave_Tricks)
-- [Crave Devspaces CLI - Signing Builds(Advanced/WIP)](./wiki/Crave_Signing)
-- [Crave AOSP Builder (Github Actions)](https://github.com/sounddrill31/crave_aosp_builder)
-
 ### General Workflow
 
 To use crave, you'll likely be doing this:
-- Enter Devspace CLI ([Guide](./Crave_Devspace#downloading))
-- Crave Cloning a new project and entering that folder([Guide](./Crave_Devspace#setting-up-the-project))
-- Set up workspace Persistance ([Guide](./Crave_Devspace#workspace-persistence))
-- Using Crave Run to start build ([Guide](./Crave_Devspace#building-using-crave-run-command))
-- Pulling your Output ([Guide](./Crave_Devspace#pulling-output))
-- Destroying old crave clone(optional) ([Guide](./Crave_Devspace#setting-up-the-project))
+- Enter Devspace CLI ([Guide](./getting-started/2.-Installing-Crave.md))
+- Crave Cloning a new project and entering that folder([Guide](./getting-started/4.-Setting-Project.md))
+- Set up workspace Persistance ([Guide](./getting-started/8.-More-Info/index.md#craveyaml))
+- Using Crave Run to start build ([Guide](./getting-started/5.-Building-Crave-Run.md))
+- Pulling your Output ([Guide](./getting-started/7.-Pulling-Output.md))
+- Destroying old crave clone(optional) ([Guide](./getting-started/4.-Setting-Project.md))
