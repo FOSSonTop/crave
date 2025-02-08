@@ -1,3 +1,7 @@
+---
+order: 8
+---
+
 # Signing Your builds On Crave
 This page is a work in progress, and so, the instructions and scripts may not work as intended. Please keep this in mind while you try it out. 
 
