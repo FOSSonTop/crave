@@ -36,3 +36,13 @@ Here are some useful guides, links and write-ups for using Crave.io resources fo
 - [Crave Devspaces CLI - Additional Tips and Tricks](./wiki/Crave_Tricks)
 - [Crave Devspaces CLI - Signing Builds(Advanced/WIP)](./wiki/Crave_Signing)
 - [Crave AOSP Builder (Github Actions)](https://github.com/sounddrill31/crave_aosp_builder)
+
+### General Workflow
+
+To use crave, you'll likely be doing this:
+- Enter Devspace CLI ([Guide](./Crave_Devspace#downloading))
+- Crave Cloning a new project and entering that folder([Guide](./Crave_Devspace#setting-up-the-project))
+- Set up workspace Persistance ([Guide](./Crave_Devspace#workspace-persistence))
+- Using Crave Run to start build ([Guide](./Crave_Devspace#building-using-crave-run-command))
+- Pulling your Output ([Guide](./Crave_Devspace#pulling-output))
+- Destroying old crave clone(optional) ([Guide](./Crave_Devspace#setting-up-the-project))
