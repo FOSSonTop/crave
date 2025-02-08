@@ -17,12 +17,12 @@ Also check out our [discord](https://discord.crave.io)!
 ### General Workflow
 
 To use crave, you'll likely be doing this:
-- Enter Devspace CLI ([Guide](/wiki/Crave_Devspace#downloading))
-- Crave Cloning a new project and entering that folder([Guide](/wiki/Crave_Devspace#setting-up-the-project))
-- Set up workspace Persistance ([Guide](/wiki/Crave_Devspace#workspace-persistence))
-- Using Crave Run to start build ([Guide](/wiki/Crave_Devspace#building-using-crave-run-command))
-- Pulling your Output ([Guide](/wiki/Crave_Devspace#pulling-output))
-- Destroying old crave clone(optional) ([Guide](/wiki/Crave_Devspace#setting-up-the-project))
+- Enter Devspace CLI ([Guide](./Crave_Devspace#downloading))
+- Crave Cloning a new project and entering that folder([Guide](./Crave_Devspace#setting-up-the-project))
+- Set up workspace Persistance ([Guide](./Crave_Devspace#workspace-persistence))
+- Using Crave Run to start build ([Guide](./Crave_Devspace#building-using-crave-run-command))
+- Pulling your Output ([Guide](./Crave_Devspace#pulling-output))
+- Destroying old crave clone(optional) ([Guide](./Crave_Devspace#setting-up-the-project))
 
 ## Downloading
 
@@ -143,7 +143,7 @@ Big Thanks to omansh-krishn for [this guide](https://github.com/omansh-krishn/cr
 
 #### *Android*
 
-[Here is a guide to use proot-distro on Android](/wiki/crave-install-guides/android)
+[Here is a guide to use proot-distro on Android](./crave-install-guides/android)
 
 After setting it up, [come back to this guide and continue](#setting-up-the-project)
 
@@ -153,13 +153,13 @@ Open [sessions](https://foss.crave.io/app/#/session?team=14) tab and
 click on "Create Session/Connect" button.
 
 Now, [skip to the next
-section](/wiki/Crave_Devspace#setting-up-the-project) without worrying about entering Devspace CLI.
+section](./Crave_Devspace#setting-up-the-project) without worrying about entering Devspace CLI.
 
 For menu, swipe from the middle of the left side of your phone. If you're on a computer/have access to a keyboard, press `Ctrl+Alt+Shift`. This menu allows you to customize the terminal, and switch input method, like phone keyboard instead of emulated one. 
 
 Crave RAS is built upon [Apache Guacamole](https://guacamole.apache.org/)
 
-There's also a VSCode Web Client, instructions to set this up can be found [here](/wiki/Crave_Tricks#wiki/Crave_Tricks#vs-code-web)
+There's also a VSCode Web Client, instructions to set this up can be found [here](./Crave_Tricks#wiki/Crave_Tricks#vs-code-web)
 
 ### How to Prepare Environment
 
@@ -311,7 +311,7 @@ Example: Building crDroid 14
 
 1. Set up closest cousin project that crave supports. Since it's
 crDroid a14, you could use CipherOS or LineageOS for this (like
-[this](/wiki/Crave_Devspace#setting-up-the-project))
+[this](./Crave_Devspace#setting-up-the-project))
 using crave clone create.
 
 2. Run crave run command, but reinit your preferred rom inside
@@ -497,7 +497,7 @@ built with
 
 Tip: You use --clean flag in crave run to reset the build storage as
 shown
-[here](/wiki/Crave_Devspace#how-to-build-using-crave-run-command)
+[here](./Crave_Devspace#how-to-build-using-crave-run-command)
 
 ### Crave.yaml
 

@@ -57,7 +57,7 @@ click on Create API Key Button.
 - Create a new file in your current shell called crave.conf
     - Paste the API Key here
 ### Step 3: Connect
-Once you take your valid crave.conf, just connect using `crave -n devspace` and return to the [previous guide](/wiki/Crave_Devspace.md#setting-up-the-project)
+Once you take your valid crave.conf, just connect using `crave -n devspace` and return to the [previous guide](./Crave_Devspace.md#setting-up-the-project)
 
 > [!NOTE]  
 > -n here tells crave to not look for updates. As of crave 7064, Updating step causes segmentation fault error, which can be worked around this way.
