@@ -15,19 +15,19 @@ hero:
 
 features:
   - title: Crave Devspace CLI
-    description: A guide to using Crave Devspace CLI to build android
+    details: A guide to using Crave Devspace CLI to build android
     link: ./getting-started/reading-rules
   - title: Crave Rules
-    description: Rules for Using Crave.io's FOSS Services
+    details: Rules for Using Crave.io's FOSS Services
     link: ./rules
   - title: Crave Tricks
-    description: Some tips and tricks we discovered when we first discovered crave
+    details: Some tips and tricks we discovered when we first discovered crave
     link: ./tricks
   - title: Crave AOSP Builder(Github Actions)
-    description: sounddrill's workflow to automate builds using Crave.io
+    details: sounddrill's workflow to automate builds using Crave.io
     link: https://github.com/sounddrill31/crave_aosp_builder
   #- title: Add More
-  #  description: Suggestions for More Entries
+  #  details: Suggestions for More Entries
 ---
 <!--mainly crave guide, crave rules, crave debugging tips, crave tricks-->
 # Context
