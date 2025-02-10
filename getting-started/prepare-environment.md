@@ -1,9 +1,9 @@
 ---
-order: 2
+order: 3
 ---
 
-# Getting Started 
-## How to Prepare Environment
+# How to Prepare Environment
+
 1. Now head on over to [foss.crave.io](https://Foss.crave.io)
 and press the Downloads button in the Left Hand Side menu to download `crave.conf` file
 
@@ -23,7 +23,7 @@ directory, or wherever your terminal leads you when you first open it.
 crave devspace
 ```
 
-## Bonus: Using tmux
+# Bonus: Using tmux
 
 Using tmux is recommended to quickly view builds, multitask, etc. Here
 is a simple guide on how to use tmux:

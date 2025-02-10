@@ -1,8 +1,8 @@
 ---
-order: 0
+order: 1
 ---
 
-### Reading the Rules
+# Reading the Rules
 
 Please read the rules before getting started.
 

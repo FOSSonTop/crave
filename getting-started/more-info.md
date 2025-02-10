@@ -1,10 +1,10 @@
 ---
-order: 7
+order: 8
 ---
 
-# Advanced
+# More Info
 
-### Bonus: Building without Devspace CLI
+## Bonus: Building without Devspace CLI
 
 - Follow all the steps except do not enter into Devspace CLI(crave
   devspace command).
@@ -27,7 +27,7 @@ chmod a+rx ~/.bin/repo
 **Do Not Do This Inside Crave Devspace CLI!**
 
 
-### Setting up the Project - Alternative Method
+## Setting up the Project - Alternative Method
 
 Instead of setting up through crave clone create, you could directly repo init a supported ROM too! Crave will see git project is set up and assign accordingly. Note that this method is not recommended if you're using Devspace CLI or RAS(web client). This makes sense when you're trying to trigger without devspace
 
@@ -61,7 +61,7 @@ repo init -u https://github.com/accupara/los20.git -b lineage-20.0 --git-lfs --d
 CLI and causes trouble for other users. Devspace CLI also does not have
 the resources to build a ROM or a similar huge project directly.**
 
-### Workspace Persistence
+## Workspace Persistence
 
 Workspace persistence here refers to the preservation of what you have
 synced and compiled in the past. This is not needed if you're building from Crave RAS(the web shell)
@@ -109,7 +109,7 @@ Tip: You use --clean flag in crave run to reset the build storage as
 shown
 [here](./building-crave-run.md#how-to-build-using-crave-run-command)
 
-### Crave.yaml
+## Crave.yaml
 
 This is a file to pass specific instructions to crave. Because repo init
 put files in .repo/manifests, that's where our crave.yaml should go.
@@ -164,7 +164,7 @@ rm .repo/manifests/crave.yaml* || true; # Removes existing crave.yamls
 curl -o .repo/manifests/crave.yaml https://raw.githubusercontent.com/sounddrill31/crave_aosp_builder/main/configs/crave/crave.yaml.aosp # Downloads crave.yaml
 ```
 
-### Optional: Setting up build environment
+## Optional: Setting up build environment
 
 Use this command to enter into a machine with your source code mounted:
 
@@ -180,7 +180,7 @@ queue for a more powerful machine.**
 
 You could get banned for syncing or building in this environment!
 
-### Paid Queue
+## Paid Queue
 You can use crave tokens to skip the queue and get the build to start faster! To use tokens from your wallet, use the flag `--platform aosp-silver`
 
 Like this:

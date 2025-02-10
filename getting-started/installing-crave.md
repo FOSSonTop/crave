@@ -1,15 +1,16 @@
 ---
-order: 1
+order: 2
 ---
 
-# Getting Started with Installing Crave
+# Installing Crave
+
 ## Web
 
 Open [sessions](https://foss.crave.io/app/#/session?team=14) tab and
 click on "Create Session/Connect" button.
 
 Now, [skip to the next
-section](./setting-project.md) without worrying about entering Devspace CLI.
+section](./setting-up-the-project.md) without worrying about entering Devspace CLI.
 
 For menu, swipe from the middle of the left side of your phone. If you're on a computer/have access to a keyboard, press `Ctrl+Alt+Shift`. This menu allows you to customize the terminal, and switch input method, like phone keyboard instead of emulated one. 
 
@@ -71,12 +72,12 @@ You will need to [install homebrew](https://brew.sh/) beforehand.
 Guide to use termux's proot-distro for crave -n devspace:
 Link to proot-distro: https://github.com/termux/proot-distro
 
-### Step 0: Install termux
+#### Step 0: Install termux
 Get it from [PlayStore](https://play.google.com/store/apps/details?id=com.termux&hl=en_IN) or [F-Droid](https://f-droid.org/en/packages/com.termux/)
 
 > [!NOTE]  
 > This guide is tested on F-Droid build
-### Step 1: Install proot-distro
+#### Step 1: Install proot-distro
 Direct Command:
 ```bash
 pkg install proot-distro
@@ -89,7 +90,7 @@ git clone https://github.com/termux/proot-distro
 cd proot-distro
 ```
 
-### Step 2: Set Up a Container using Proot
+#### Step 2: Set Up a Container using Proot
 Install Ubuntu:
 ```bash
 pd install ubuntu
@@ -115,7 +116,7 @@ Grant Permissions and Move it:
 chmod +x crave; mv crave /usr/local/bin/
 ```
 
-### Step 2.5: Set up Credentials
+#### Step 2.5: Set up Credentials
 Now open up your browser and navigate back to foss.crave.io dashboard. On the same Left Hand Side menu, and go to API keys.
 - Create a new one, name it whatever you like to easily identify it and
 click on Create API Key Button.
@@ -123,18 +124,18 @@ click on Create API Key Button.
 - Create a new file in your current shell called crave.conf
     - Paste the API Key here
 #### Step 3: Connect
-Once you take your valid crave.conf, just connect using `crave -n devspace` and return to the [previous guide](./setting-project.md)
+Once you take your valid crave.conf, just connect using `crave -n devspace` and return to the [previous guide](./setting-up-the-project.md)
 
 > [!NOTE]  
 > -n here tells crave to not look for updates. As of crave 7064, Updating step causes segmentation fault error, which can be worked around this way.
 
-### Step 3.5: Quick Reconnection
+#### Step 3.5: Quick Reconnection
 To Quickly reconnect, just run:
 ```bash
 pd sh ubuntu -- crave -n devspace
 ```
 
-### Notes: 
+# Notes: 
 if you facing issues:
 - try to exit from termux
 - then re-login with: 

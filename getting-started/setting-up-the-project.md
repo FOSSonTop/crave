@@ -1,9 +1,8 @@
 ---
-order: 3
+order: 4
 ---
 
-# Getting Started
-## Setting Up The Project
+# Setting Up The Project
 
 1. First use list to check the available projects:
 

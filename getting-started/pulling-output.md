@@ -1,10 +1,10 @@
 ---
-order: 6
+order: 7
 ---
 
-# Getting Started 
-## Pulling Output
-### Automatic Method: Github Releases upload.sh script
+# Pulling Output
+
+## Automatic Method: Github Releases upload.sh script
 
 - Enter the directory where you used crave run
 - Create token.txt with your github PAT in there(ensure it has necessary
@@ -28,7 +28,7 @@ before the above command
 export GH_UPLOAD_LIMIT="yourvalue"
 ```
 
-### Automatic Method: Telegram upload.sh script
+## Automatic Method: Telegram upload.sh script
 
 - Enter the directory where you used crave run
 - [Set up
@@ -49,7 +49,7 @@ before the above command
 export TG_UPLOAD_LIMIT="yourvalue"
 ```
 
-### Manual Method: How to pull output to Devspace CLI
+## Manual Method: How to pull output to Devspace CLI
 
 - Simply use the crave pull command inside the same directory as before:
 

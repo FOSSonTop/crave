@@ -1,11 +1,8 @@
 ---
-order: 4
+order: 5
 ---
 
-# Getting Started 
-
-## Building Using Crave Run command
-### How to build using Crave Run Command
+# Building Using Crave Run command
 
 > [!NOTE]
 > This section shows you how commands work. Skip to The next half for [how to also clone device sources in there](#Clone-Device-Sources-During-Build)
@@ -36,7 +33,7 @@ crave run --clean --no-patch -- "your commands"
 When you run a build using crave run, it adds you to the build queue,
 where a build node comes, picks it up and compiles your build for you!
 
-### Clone Device Sources During Build
+# Clone Device Sources During Build
 
 Options: officially supported devices, local manifests, sync scripts,
 and manual git clone.

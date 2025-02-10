@@ -1,8 +1,9 @@
 ---
-order: 8
+order: 9
 ---
 
-# Signing Your builds On Crave
+# Signing Builds On Crave
+
 This page is a work in progress, and so, the instructions and scripts may not work as intended. Please keep this in mind while you try it out. 
 
 This guide also assumes you are familiar with crave and the procedure building and signing android, and debugging issues that arise. 
@@ -37,7 +38,7 @@ This script automates the process of generating, encrypting, and uploading Andro
 
 1. **Execute the Script:**
 
-   Enter your Project folder. If you don't have one already, make one using [crave clone create](./setting-project.md).
+   Enter your Project folder. If you don't have one already, make one using [crave clone create](./setting-up-the-project.md).
 
    `cd Lineage21`
 

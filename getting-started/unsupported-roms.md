@@ -1,9 +1,9 @@
 ---
-order: 5
+order: 6
 ---
 
-# Getting Started 
-## Bonus: Building Unsupported ROM
+# Bonus: Building Unsupported ROM
+
 This is discouraged as it causes many sync conflicts and is a bit difficult to debug, however, it is not against the rules.
 Rules for doing this:
 
@@ -17,7 +17,7 @@ Example: Building crDroid 14
 
 1. Set up closest cousin project that crave supports. Since it's
 crDroid a14, you could use CipherOS or LineageOS for this (like
-[this](./setting-project.md))
+[this](./setting-up-the-project.md))
 using crave clone create.
 
 2. Run crave run command, but reinit your preferred rom inside
