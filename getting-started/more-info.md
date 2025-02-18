@@ -84,8 +84,8 @@ This build storage is reset when one of these 4 factors change:
   now(the name/path matters, not the contents). Here are the recommended
   directory names if you frequently use my [github actions
   repo](https://github.com/sounddrill31/crave_aosp_builder):
-
-```bash
+  
+```
 /crave-devspaces/Arrow13
 /crave-devspaces/Lineage20
 /crave-devspaces/Lineage21 

@@ -19,7 +19,7 @@ directory, or wherever your terminal leads you when you first open it.
 
 3. Finally, to enter Devspace CLI: simply run
 
-```
+```bash
 crave devspace
 ```
 

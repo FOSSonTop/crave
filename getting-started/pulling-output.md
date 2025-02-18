@@ -11,7 +11,7 @@ order: 7
   permissions)
 - Use the upload script
 
-```
+```bash
 bash /opt/crave/github-actions/upload.sh 'tag' 'device' 'repository' 'release title' 'extra files'
 ```
 

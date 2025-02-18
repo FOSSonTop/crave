@@ -22,7 +22,7 @@ using crave clone create.
 
 2. Run crave run command, but reinit your preferred rom inside
 
-```
+```bash
 crave run --no-patch -- "rm -rf .repo/local_manifests; \
 repo init -u https://github.com/crdroidandroid/android.git -b 14.0 --git-lfs; \
 git clone https://github.com/youraccount/local_manifests --depth 1 -b rising-14 .repo/local_manifests; \ 

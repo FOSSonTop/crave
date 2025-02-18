@@ -6,7 +6,7 @@ order: 4
 
 1. First use list to check the available projects:
 
-```
+```bash
 crave clone list  # note down the project id for the next step
 ```
 
@@ -14,19 +14,19 @@ crave clone list  # note down the project id for the next step
 build! This will automatically snapclone the latest source code for the
 project that you are trying to build in a matter of seconds
 
-```
+```bash
 crave clone create --projectID 72 /crave-devspaces/Lineage21
 ```
 
 3. Remember to enter that folder you just created
-```
+```bash
 cd /crave-devspaces/Lineage21
 ```
 
 After you're done building the ROM at the end of this guide, use crave
 clone destroy to delete the folder. Do not use rm -rf!
 
-```
+```bash
 crave clone destroy /crave-devspaces/Lineage21
 ```
 

@@ -43,7 +43,7 @@ and manual git clone.
   instructions for your device. You will need proprietary blobs, which
   can usually be found on TheMuppets repositories.
 
-``` 
+```bash
 crave run  --no-patch -- "rm -rf .repo/local_manifests; \
 git clone https://github.com/TheMuppets/manifests --depth 1 -b lineage-21.0 .repo/local_manifests; \
 /opt/crave/resync.sh; \
@@ -53,7 +53,7 @@ brunch Mi439"
 
 - Local manifests example:
 
-```
+```bash
 crave run  --no-patch -- "rm -rf .repo/local_manifests; \
 git clone https://github.com/sounddrill31/reponame --depth 1 -b branchname .repo/local_manifests; \
 /opt/crave/resync.sh; \

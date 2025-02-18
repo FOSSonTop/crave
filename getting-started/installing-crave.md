@@ -61,7 +61,7 @@ sudo ln -sf /home/${USER}/bin/crave /usr/bin/crave; sudo chmod +x /usr/bin/crave
 
 - If you're on macOS, run this command to install crave
 
-```bash
+```sh
 brew install --cask crave
 ```
 You will need to [install homebrew](https://brew.sh/) beforehand.
