@@ -12,30 +12,30 @@ order: 8
   crave is installed/set up along with a valid crave.conf)
 - You might also want to install google's repo tool:
 
-```
+```bash
 mkdir -p ~/.bin;
 ```
-```
+```bash
 PATH="${HOME}/.bin:${PATH}";
 ```
-```
+```bash
 curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo;
 ```
-```
+```bash
 chmod a+rx ~/.bin/repo
 ```
-**Do Not Do This Inside Crave Devspace CLI!**
+*Do Not Do This Inside Crave Devspace CLI!**
 
 
 ## Setting up the Project - Alternative Method
 
 Instead of setting up through crave clone create, you could directly repo init a supported ROM too! Crave will see git project is set up and assign accordingly. Note that this method is not recommended if you're using Devspace CLI or RAS(web client). This makes sense when you're trying to trigger without devspace
 
-```
+```bash
 mkdir /crave-devspaces/Lineage21; cd /crave-devspaces/Lineage21
 ```
 
-```
+```bash
 repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs --depth=1
 ```
 
@@ -47,13 +47,13 @@ repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs 
 
 For lineageOS 21, run
 
-```
+```bash
 repo init -u https://github.com/LineageOS/android.git -b lineage-21.0 --git-lfs --depth=1
 ```
 
 For lineageOS 20, run
 
-```
+```bash
 repo init -u https://github.com/accupara/los20.git -b lineage-20.0 --git-lfs --depth=1
 ```
 
@@ -68,7 +68,7 @@ synced and compiled in the past. This is not needed if you're building from Crav
 
 This build storage is reset when one of these 4 factors change:
 
-```
+```bash
 1. Project UUID
 2. User ID  
 3. Workspace Dir 
@@ -85,7 +85,7 @@ This build storage is reset when one of these 4 factors change:
   directory names if you frequently use my [github actions
   repo](https://github.com/sounddrill31/crave_aosp_builder):
 
-```
+```bash
 /crave-devspaces/Arrow13
 /crave-devspaces/Lineage20
 /crave-devspaces/Lineage21 
@@ -123,7 +123,7 @@ The name has to match with the project name on dashboard(eg "Arrow OS"
 
 Examples:
 
-```
+```bash
 CipherOS:
   ignoreClientHostname: true 
 Arrow OS:
@@ -144,7 +144,7 @@ LOS CM 14.1:
   ignoreClientHostname: true  
 ```
 
-```
+```bash
 TWRP:
   ignoreClientHostname: true
   image: "sounddrill31/crave-archlinux-twrp@sha256:605892162a907ea3760813643c9aa1bdb63a7ae0dce6ca159b0f6e20a7c0815b"
@@ -158,7 +158,7 @@ documentation](https://foss.crave.io/docs/crave-usage/#location-of-the-craveyaml
 Tip: If you find this part confusing, just run this command inside the
 folder we made before
 
-```
+```bash
 rm .repo/manifests/crave.yaml* || true; # Removes existing crave.yamls
 
 curl -o .repo/manifests/crave.yaml https://raw.githubusercontent.com/sounddrill31/crave_aosp_builder/main/configs/crave/crave.yaml.aosp # Downloads crave.yaml
@@ -168,7 +168,7 @@ curl -o .repo/manifests/crave.yaml https://raw.githubusercontent.com/sounddrill3
 
 Use this command to enter into a machine with your source code mounted:
 
-```
+```bash
 crave ssh
 ```
 
@@ -184,7 +184,7 @@ You could get banned for syncing or building in this environment!
 You can use crave tokens to skip the queue and get the build to start faster! To use tokens from your wallet, use the flag `--platform aosp-silver`
 
 Like this:
-```
+```bash
 crave run --no-patch --platform aosp-silver -- "build commands here"
 ```
 

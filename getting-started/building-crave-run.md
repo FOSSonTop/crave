@@ -14,7 +14,7 @@ execute our commands, one by one.
 
 - Syntax:
 
-```
+```bash
 crave run --no-patch -- "your commands"
 ```
 
@@ -26,7 +26,7 @@ Please avoid doing this needlessly as resyncing and building from takes a lot of
 
 Syntax:
 
-```
+```bash
 crave run --clean --no-patch -- "your commands"
 ```
 
@@ -76,7 +76,7 @@ to resync.sh
 
 - Git clone example:
 
-```
+```bash
 crave run  --no-patch -- "rm -rf device/oem/codename kernel/oem/codename vendor/oem/codename; \
 git clone https://github.com/sounddrill31/android_device_oem_codename --depth 1 -b branchname device/oem/codename; \
 git clone https://github.com/sounddrill31/android_kernel_oem_codename --depth 1 -b branchname kernel/oem/codename; \

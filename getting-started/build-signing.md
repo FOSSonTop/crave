@@ -44,7 +44,7 @@ This script automates the process of generating, encrypting, and uploading Andro
 
    Run the script using the following command:
 
-   ```sh
+   ```bash
    /opt/crave/backblaze_keygen.sh
    ```
 
@@ -71,7 +71,7 @@ Upon successful execution, the script outputs a confirmation message and ensures
 
 ### Example Output
 
-```sh
+```bash
 Enter the password: ********
 Enter the Encryption Password: ********
 
@@ -220,7 +220,7 @@ If you're using sounddrill's crave_aosp_builder github actions workflow, you can
 
    Run the script using the following command inside crave run:
 
-   ```sh
+   ```bash
    /opt/crave/crave_sign.sh
    ```
 

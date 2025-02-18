@@ -24,7 +24,7 @@ You can find the source code for the script [here](https://github.com/accupara/d
 Tip: By default, size limit is set to 2147483648. To change it, run this
 before the above command
 
-```
+```bash
 export GH_UPLOAD_LIMIT="yourvalue"
 ```
 
@@ -35,7 +35,7 @@ export GH_UPLOAD_LIMIT="yourvalue"
   telegram-upload](https://github.com/Nekmo/telegram-upload#-usage)
 - Use the upload script
 
-```
+```bash
 /opt/crave/telegram/upload.sh 'device' 'extra files'
 ```
 
@@ -45,7 +45,7 @@ for the script [here](https://github.com/accupara/docker-images/blob/master/aosp
 Tip: By default, size limit is set to 2147483648. To change it, run this
 before the above command
 
-```
+```bash
 export TG_UPLOAD_LIMIT="yourvalue"
 ```
 
@@ -53,11 +53,11 @@ export TG_UPLOAD_LIMIT="yourvalue"
 
 - Simply use the crave pull command inside the same directory as before:
 
-```
+```bash
 crave pull out/target/product/*/*.zip
 ```
 
-```
+```bash
 crave pull out/target/product/*/*.img
 ```
 

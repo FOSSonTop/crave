@@ -39,21 +39,21 @@ Tip: If you use powershell and crave is not recognised but crave.exe exists in y
 
 - If you're on linux, run this command to download crave binary
 
-```
+```bash
 curl -s https://raw.githubusercontent.com/accupara/crave/master/get_crave.sh | bash -s -- 
 ```
 
 - Run these commands to install it systemwide
 
-```
+```bash
 mkdir -p ${HOME}/bin/
 ```
 
-```
+```bash
 mv ${PWD}/crave ${HOME}/bin/ 
 ```
 
-```
+```bash
 sudo ln -sf /home/${USER}/bin/crave /usr/bin/crave; sudo chmod +x /usr/bin/crave 
 ```
 
@@ -61,7 +61,7 @@ sudo ln -sf /home/${USER}/bin/crave /usr/bin/crave; sudo chmod +x /usr/bin/crave
 
 - If you're on macOS, run this command to install crave
 
-```
+```bash
 brew install --cask crave
 ```
 You will need to [install homebrew](https://brew.sh/) beforehand.
