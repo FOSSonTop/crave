@@ -69,7 +69,7 @@ You will need to [install homebrew](https://brew.sh/) beforehand.
 ## Android
 ### Installing on Termux
 
-Guide to use termux's proot-distro for crave -n devspace:
+Guide to use termux's proot-distro for connecting to Crave Devspace:
 Link to proot-distro: https://github.com/termux/proot-distro
 
 #### Step 0: Install termux
