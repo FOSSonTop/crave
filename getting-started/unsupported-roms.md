@@ -20,16 +20,16 @@ graph LR
     A[Devspace] --> M
     M[Queue] --> N[Build Node]
     
-    style A fill:#e6f3ff,stroke:#0066cc
-    style M fill:#ffe6cc,stroke:#ff9900
-    style N fill:#e6ffe6,stroke:#009900
+    style A fill:#000000,stroke:#0047b3
+    style M fill:#000000,stroke:#cc7a00
+    style N fill:#000000,stroke:#006600
 
-    P("Devspace: Create crave clone(using a similar ROM as base), trigger build like before. Eg. LineageOS 22") 
+    P("Devspace: Create crave clone(using a similar ROM as base) and trigger a build") 
     Q("Queue: Wait for the build to start") 
-    R("Build Server: Uses your crave run commands to sync the ROM you want (Eg. crDroid) and builds it")
+    R("Build Server: Uses crave run commands to build and sync the ROM you want")
     
-    P ==> Q ==> R
-```
+    P ==> | eg. LineageOS 22|Q ==> R --> |eg. crDroid 14 | S(Build Done)
+  ```
 
 Example: Building crDroid 14
 
