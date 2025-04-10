@@ -14,7 +14,6 @@ Rules for doing this:
 - Sync android 14 ROMs on Android 14 base project only
 
 ```mermaid
-%%{init: {'themeVariables': { 'primaryColor': '#ffcccc', 'edgeLabelBackground':'#fff', 'tertiaryColor':'#ccffcc'}}}%%
 graph TD
     %% Diagram 1: Create crave clone -> start build
     A[Devspace] --> M
@@ -26,7 +25,7 @@ graph TD
 
     P("Devspace: Create crave clone(using a similar ROM as base)") 
     Q("Queue: Wait for the build to start") 
-    R("Build Server: Uses crave run commands to build and sync the ROM you want")
+    R("Build Server: Uses crave run commands to sync the ROM you want")
     
     P ==> | Choose a good base that is similar to the ROM you're building.
     Eg. LineageOS 21 |Q ==> R --> |Build the ROM you'd like. 
