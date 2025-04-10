@@ -20,11 +20,23 @@ graph LR
     M --> F[Build server 2]
     M --> G[Build server 3]
 
+    style A stroke:#0047b3
+    style B stroke:#0047b3
+    style C stroke:#0047b3
+    style D stroke:#0047b3
+    
+    style M stroke:#cc7a00
+    
+    style E stroke:#006600
+    style F stroke:#006600
+    style G stroke:#006600
+
     P("Devspace is a small development platform for individual Crave users for the purpose of setting up base project and target project<br>**PROJECTS ARE NEITHER SYNCED HERE NOR BUILT HERE<br>ie.repo sync and build commands must not be used here**")
     Q("This is the queue platform which can be accessed in foss.crave.io  (You will wait here till a node is allocated)")
     R("Build nodes are supreme build machines that receive builds from the queue. The actual build happens here, ie. all the scripts in the build request will be executed here<br>**(THIS IS WHERE THE REPO SYNC and THE BUILD COMMANDS ARE EXECUTED)**")
 
     P ==> Q ==> R
+
 ```
 <!-- (Diagram idea by @subhahbus, converted by [Yuvraaj](https://github.com/Uvatbc))-->
 <sub>TODO: Give credit</sub>
