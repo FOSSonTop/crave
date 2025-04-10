@@ -15,20 +15,23 @@ Rules for doing this:
 
 ```mermaid
 %%{init: {'themeVariables': { 'primaryColor': '#ffcccc', 'edgeLabelBackground':'#fff', 'tertiaryColor':'#ccffcc'}}}%%
-graph LR
+graph TD
     %% Diagram 1: Create crave clone -> start build
     A[Devspace] --> M
     M[Queue] --> N[Build Node]
     
-    style A fill:#000000,stroke:#0047b3
-    style M fill:#000000,stroke:#cc7a00
-    style N fill:#000000,stroke:#006600
+    style A stroke:#0047b3
+    style M stroke:#cc7a00
+    style N stroke:#006600
 
-    P("Devspace: Create crave clone(using a similar ROM as base) and trigger a build") 
+    P("Devspace: Create crave clone(using a similar ROM as base)") 
     Q("Queue: Wait for the build to start") 
     R("Build Server: Uses crave run commands to build and sync the ROM you want")
     
-    P ==> | eg. LineageOS 22|Q ==> R --> |eg. crDroid 14 | S(Build Done)
+    P ==> | Choose a good base that is similar to the ROM you're building.
+    Eg. LineageOS 21 |Q ==> R --> |Build the ROM you'd like. 
+    Eg. crDroid 14 | S(Build Done)
+
   ```
 
 Example: Building crDroid 14
