@@ -31,15 +31,13 @@ graph LR
     style F stroke:#006600
     style G stroke:#006600
 
-    P("Devspace is a small development platform for individual Crave users for the purpose of setting up base project and target project")
-    Q("This is the queue platform which can be accessed in foss.crave.io")
+    P("Devspace is a small development platform for individual Crave users")
+    Q("This is the queue which can be accessed in foss.crave.io<br>")
     R("Build nodes are supreme build machines that receive builds from the queue.")
 
-    S("**PROJECTS ARE NEITHER SYNCED HERE NOR BUILT HERE<br>ie.repo sync and build commands must not be used here**")
-    T("(You will wait here in the queue till a node is allocated)")
-    U("The actual build happens here, ie. all the scripts in the build request will be executed.<br>**(THIS IS WHERE THE 
-    REPO SYNC and BUILD COMMANDS HAPPEN)**")
-
+    S("**PROJECTS ARE NEITHER SYNCED HERE NOR BUILT HERE! ie.repo sync and build commands must not be used here**")
+    T("(You will wait here in the queue till build node is allocated)")
+    U("The actual build happens here, ie. all the scripts in the build request will be executed.<br>**(REPO SYNC and BUILD COMMANDS are allowed)**")
     P ==> Q ==> R
     S === T === U
 ```
