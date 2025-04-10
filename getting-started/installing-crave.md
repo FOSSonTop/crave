@@ -5,6 +5,11 @@ order: 2
 # Installing Crave
 
 ## Web
+```mermaid
+flowchart LR
+    A(Got to Dasboard) --> |Login| C(Open Session tab) --> D(Open Devspace CLI through 
+    VSCode Web or Shell mode)
+```
 
 Open [sessions](https://foss.crave.io/app/#/session?team=14) tab and
 click on "Create Session/Connect" button.
@@ -19,7 +24,10 @@ Crave RAS is built upon [Apache Guacamole](https://guacamole.apache.org/)
 There's also a VSCode Web Client, instructions to set this up can be found [here](../tricks.md#vs-code-web)
 
 ## Windows
-
+```mermaid
+flowchart LR
+    A(Install crave cli tool from dashboard) -->|Set up crave.conf file| A1(Open Devspace CLI)
+```
 On windows, download the zip, extract it, enter it.
 
 Right click somewhere blank on the folder and click on Open In Terminal.
@@ -36,7 +44,10 @@ crave folder)
 Tip: If you use powershell and crave is not recognised but crave.exe exists in your current folder, you can use `./crave.exe` instead of `crave` to launch Devspace CLI. After that, go back to using `crave` when you enter Devspace CLI since it's a ubuntu environment with crave set up correctly.
 
 ## Linux
-
+```mermaid
+flowchart LR
+    A(Install crave cli tool using the given command) -->|Set up crave.conf file| A1(Open Devspace CLI)
+```
 - If you're on linux, run this command to download crave binary
 
 ```bash
@@ -60,7 +71,10 @@ sudo ln -sf /home/${USER}/bin/crave /usr/bin/crave; sudo chmod +x /usr/bin/crave
 ## Mac
 
 - If you're on macOS, run this command to install crave
-
+```mermaid
+flowchart LR
+    A(Set up homebrew) --> B(Install crave cli tool from brew) -->|Set up crave.conf file| C(Open Devspace CLI)
+```
 ```sh
 brew install --cask crave
 ```
@@ -68,7 +82,10 @@ You will need to [install homebrew](https://brew.sh/) beforehand.
 
 ## Android
 ### Installing on Termux
-
+```mermaid
+flowchart TD
+    A(Install termux app) --> B(Install proot-distro) --> C(Open ubuntu container) --> D(Install crave cli tool from dashboard) -->|Set up crave.conf file| A1(Open Devspace CLI)
+```
 Guide to use termux's proot-distro for connecting to Crave Devspace:
 Link to proot-distro: https://github.com/termux/proot-distro
 

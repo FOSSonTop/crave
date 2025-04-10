@@ -13,6 +13,24 @@ Rules for doing this:
 - (General Rule) Do not queue multiple builds at once
 - Sync android 14 ROMs on Android 14 base project only
 
+```mermaid
+%%{init: {'themeVariables': { 'primaryColor': '#ffcccc', 'edgeLabelBackground':'#fff', 'tertiaryColor':'#ccffcc'}}}%%
+graph LR
+    %% Diagram 1: Create crave clone -> start build
+    A[Devspace] --> M
+    M[Queue] --> N[Build Node]
+    
+    style A fill:#e6f3ff,stroke:#0066cc
+    style M fill:#ffe6cc,stroke:#ff9900
+    style N fill:#e6ffe6,stroke:#009900
+
+    P("Devspace: Create crave clone(using a similar ROM as base), trigger build like before. Eg. LineageOS 22") 
+    Q("Queue: Wait for the build to start") 
+    R("Build Server: Uses your crave run commands to sync the ROM you want (Eg. crDroid) and builds it")
+    
+    P ==> Q ==> R
+```
+
 Example: Building crDroid 14
 
 1. Set up closest cousin project that crave supports. Since it's

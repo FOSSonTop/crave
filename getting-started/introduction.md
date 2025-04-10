@@ -15,3 +15,12 @@ This guide attempts to help new and old users with Android development and using
  Please request an account [here](https://forms.gle/Jhvy9osvdmcS9B7fA) since self-signup is disabled.
 
 Also check out the official [discord](https://discord.crave.io)!
+
+## General Steps
+Using Crave.io is a little bit different from using a normal server, mainly because it has a queue system. This wiki expands upon the following process in a step by step manner:
+```mermaid
+flowchart TD
+    A(Install crave cli tool) -->|Set up crave.conf file| A1(Open Devspace CLI) --> B(Create a Crave Clone)
+    Z(Open Devspace CLI in Web) --> B
+    B -->|Enter the crave clone folder using cd| C(Set up crave.yaml for the project, to ensure the build storage persists) --> D(Trigger a build using Crave Run)
+```

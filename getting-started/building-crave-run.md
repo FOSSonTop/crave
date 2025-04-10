@@ -7,6 +7,28 @@ order: 5
 > [!NOTE]
 > This section shows you how commands work. Skip to The next half for [how to also clone device sources in there](#Clone-Device-Sources-During-Build)
 
+```mermaid
+graph LR
+    A[Devspace User 1] --> M
+    B[Devspace User 2] --> M
+    C[Devspace User 3] --> M
+    D[Devspace User 4] --> M
+
+    M[Queue:: Build 1,2,3,4,.... n]
+
+    M --> E[Build server 1]
+    M --> F[Build server 2]
+    M --> G[Build server 3]
+
+    P("Devspace is a small development platform for individual Crave users for the purpose of setting up base project and target project<br>**PROJECTS ARE NEITHER SYNCED HERE NOR BUILT HERE<br>ie.repo sync and build commands must not be used here**")
+    Q("This is the queue platform which can be accessed in foss.crave.io  (You will wait here till a node is allocated)")
+    R("Build nodes are supreme build machines that receive builds from the queue. The actual build happens here, ie. all the scripts in the build request will be executed here<br>**(THIS IS WHERE THE REPO SYNC and THE BUILD COMMANDS ARE EXECUTED)**")
+
+    P ==> Q ==> R
+```
+<!-- (Diagram idea by @subhahbus, converted by [Yuvraaj](https://github.com/Uvatbc))-->
+<sub>TODO: Give credit</sub>
+
 Simply use crave run! On a normal server, we'd be running commands one
 by one. But since crave uses a queue system, we run all the commands in
 one go, and wait for our turn in queue. Then, the build node will
