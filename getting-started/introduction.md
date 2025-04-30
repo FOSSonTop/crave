@@ -22,5 +22,5 @@ Using Crave.io is a little bit different from using a normal server, mainly beca
 flowchart TD
     A(Install crave cli tool) -->|Set up crave.conf file| A1(Open Devspace CLI) --> B(Create a Crave Clone)
     Z(Open Devspace CLI in Web) --> B
-    B -->|Enter the crave clone folder| C(Set up crave.yaml for the project) --> D(Trigger a build using Crave Run)
+    B -->|Open crave clone folder| C(Set up crave.yaml for the project) --> D(Trigger a build using Crave Run)
 ```

@@ -7,8 +7,7 @@ order: 2
 ## Web
 ```mermaid
 flowchart LR
-    A(Got to Dasboard) --> |Login| C(Open Session tab) --> D(Open Devspace CLI through 
-    VSCode Web or Shell mode)
+    A(Go to Dasboard) --> |Login| C(Open Session tab) --> D(Open Devspace CLI)
 ```
 
 Open [sessions](https://foss.crave.io/app/#/session?team=14) tab and
@@ -84,7 +83,7 @@ You will need to [install homebrew](https://brew.sh/) beforehand.
 ### Installing on Termux
 ```mermaid
 flowchart TD
-    A(Install termux app) --> B(Install proot-distro) --> C(Open ubuntu container) --> D(Install crave cli tool from dashboard) -->|Set up crave.conf file| A1(Open Devspace CLI)
+    A(Install termux app) --> B(Install proot-distro) --> C(Open ubuntu container) --> D(Install crave cli tool) -->|Set up crave.conf file| A1(Open Devspace CLI)
 ```
 Guide to use termux's proot-distro for connecting to Crave Devspace:
 Link to proot-distro: https://github.com/termux/proot-distro

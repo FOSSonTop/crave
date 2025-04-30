@@ -23,11 +23,11 @@ graph TD
     style M stroke:#cc7a00
     style N stroke:#006600
 
-    P("Devspace: Create crave clone(using a similar ROM as base)") 
+    P("Devspace: Create crave clone") 
     Q("Queue: Wait for the build to start") 
-    R("Build Server: Uses crave run commands to sync the ROM you want")
+    R("Build Server: Uses crave run commands")
     
-    P ==> | Choose a good base that is similar to the ROM you're building.
+    P ==> | Choose a similar ROM 
     Eg. LineageOS 21 |Q ==> R --> |Build the ROM you'd like. 
     Eg. crDroid 14 | S(Build Done)
 
