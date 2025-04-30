@@ -4,6 +4,9 @@ order: 1
 
 # Reading the Rules
 
-Please read the rules before getting started.
+Please read the rules below before getting started.
 
-[Here's the link to the rules](../rules.md)
+<!--@include: ../rules.md-->
+
+<!-- [Here's the link to the rules](../rules.md)-->
+
