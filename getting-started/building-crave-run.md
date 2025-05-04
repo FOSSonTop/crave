@@ -80,7 +80,8 @@ and manual git clone.
   instructions for your device. You will need proprietary blobs, which
   can usually be found on TheMuppets repositories.
 
-- Note: We strongly suggest not to use repo sync command like repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags --prune instead use our builtin command /opt/crave/resync.sh
+- Note: We strongly suggest using /opt/crave/resync.sh for syncing instead of running repo sync.... since resync automatically handles conflicts
+
 
 ```bash
 crave run  --no-patch -- "rm -rf .repo/local_manifests; \
