@@ -70,6 +70,9 @@ and manual git clone.
   instructions for your device. You will need proprietary blobs, which
   can usually be found on TheMuppets repositories.
 
+- Note: We strongly suggest using /opt/crave/resync.sh for syncing instead of running repo sync.... since resync automatically handles conflicts
+
+
 ```bash
 crave run  --no-patch -- "rm -rf .repo/local_manifests; \
 git clone https://github.com/TheMuppets/manifests --depth 1 -b lineage-21.0 .repo/local_manifests; \
