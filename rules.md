@@ -10,6 +10,8 @@ These are some rules users are expected to follow. Ignoring these rules may resu
 ## Queue Rules
 Here are some simple Rules you are expected to follow to ensure everyone in the queue is happy:
 - ***Do not Queue multiple builds at once***: One account can only trigger one build at once.
+    - ***Do not Build for Multiple Devices at once***: One Build should only build for one device/target(Unified devices, where a single build can boot on multiple devices, are allowed as long as they follow this rule)
+    - Sharing the same device repo or common tree does not exempt you from this rule.
 - ***Do not use make clean or rm -rf out***. This slows down the queue because a 15 to 30 min incremental build becomes a full 3-4 hours build from scratch. Frequent use of this command without reason may cause temporary ban. 
 - ***Do not abuse --clean needlessly***. Use only if there is a legitimate need and contact a queue moderator through the official chats when in doubt. This is done for the same reasons as the above rule.
 - ***Do not make a folder and sync inside that to avoid conflicts*** (like `cd folder; repo sync`)
