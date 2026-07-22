@@ -53,9 +53,6 @@ Please avoid doing this needlessly as resyncing and building from takes a lot of
 
 Syntax:
 
-```bash
-crave run --clean --no-patch -- "your commands"
-```
 
 When you run a build using crave run, it adds you to the build queue,
 where a build node comes, picks it up and compiles your build for you!
