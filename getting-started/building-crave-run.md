@@ -51,9 +51,6 @@ Note: using clean build will reset the image to default. This means it removes a
 
 Please avoid doing this needlessly as resyncing and building from takes a lot of time. 
 
-Syntax:
-
-
 When you run a build using crave run, it adds you to the build queue,
 where a build node comes, picks it up and compiles your build for you!
 
