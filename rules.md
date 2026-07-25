@@ -3,6 +3,10 @@ These are some rules users are expected to follow. Ignoring these rules may resu
 ## Devspace CLI Rules
 - ***Do not abuse the service with alts***. Sending multiple commands using multiple accounts is strictly prohibited and will result in a permanent ban.
 - ***Do not use repo sync, use crave run instead***. If you try to install repo tool manually, it is looked at as an act to circumvent the rules and will likely result in a ban. This also applies in a crave ssh environment.
+- use --depth 1 on repo init to lessen syncing time
+```bash
+repo init -u https://github.com/LineageOS/android.git -b lineage-23.2 --git-lfs --depth 1
+```
 - ***Be mindful of Devspace CLI Storage***. Clean up your .zip and .img build artefacts if you're used to pulling them to devspace
 - ***Do not rm -rf a crave clone***. Use crave clone destroy path/to/folder/ instead. Use crave clone list to know the folder path.
 - ***No building***: Do not try to build inside Decspace CLI using commands like make, mka, mm, m, etc. Use crave run instead. This also applies in a crave ssh environment.
