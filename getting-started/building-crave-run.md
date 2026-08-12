@@ -39,17 +39,28 @@ by one. But since crave uses a queue system, we run all the commands in
 one go, and wait for our turn in queue. Then, the build node will
 execute our commands, one by one.
 
-- Syntax:
 
-```bash
-crave run --no-patch -- "your commands"
-```
+Please avoid doing this needlessly as resyncing and building from takes a lot of time. 
 
-- If you'd like a clean build, add --clean flag
+:::: clean builds
+
+If you'd like a clean build, add --clean flag
 
 Note: using clean build will reset the image to default. This means it removes any of your progress e.g. synced dt/or the out folder from previous build and ensures we're back to the default source code of the base project. 
 
-Please avoid doing this needlessly as resyncing and building from takes a lot of time. 
+::: danger Important: READ THIS!
+As stated above, clean builds start your build from scratch. We want you to not use this unless you have express permission from a moderator. 
+
+Abusing this without a valid reason will definitely get you banned off the platform. 
+:::
+
+Syntax:
+
+```bash
+crave run --clean --no-patch -- "your commands"
+```
+
+::::
 
 When you run a build using crave run, it adds you to the build queue,
 where a build node comes, picks it up and compiles your build for you!
