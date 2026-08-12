@@ -18,6 +18,7 @@ Here are some simple Rules you are expected to follow to ensure everyone in the 
     - Sharing the same device repo or common tree does not exempt you from this rule.
 - ***Do not use make clean or rm -rf out***. This slows down the queue because a 15 to 30 min incremental build becomes a full 3-4 hours build from scratch. Frequent use of this command without reason may cause temporary ban. 
 - ***Do not abuse --clean needlessly***. Use only if there is a legitimate need and contact a queue moderator through the official chats when in doubt. This is done for the same reasons as the above rule.
+- ***Do not abuse crave clone and crave clone destroy. This is just continuation of --clean rule. if you're building the same rom and only have device changes, make installclean is enough. 
 - ***Do not make a folder and sync inside that to avoid conflicts*** (like `cd folder; repo sync`)
 - ***Do not rm -rf***  * to remove the entire pre-synced source. Resyncing from scratch takes time, which makes the people next in line unhappy. You can remove small files or folders but be mindful of the sync/build time to reclone that
 - ***Private repos***. Do not perform or help users set up cloning from private repos because this goes against the "foss" in foss.crave.io.
